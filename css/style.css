@@ -1,0 +1,200 @@
+nav li {
+    display: inline-block;
+    vertical-align: top;
+}
+div.logo {
+    width: 23%;
+    padding: 1%;
+}
+nav {
+    width: 73%;
+    padding: 1%;
+}
+nav ul {
+    width: 50%;
+    margin-left: auto;
+    word-spacing: 10px;
+}
+div.content{
+    text-align: center;
+}
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+    margin-top: 10px;
+}
+button {
+    background-color: peru;
+    color: white;
+    margin-top: 10px;
+}
+section.heroImg {
+    height: 700px;
+    padding: 25px;
+}
+div.content {
+    width: 500px;
+    margin: 0 auto;
+}
+footer {
+    background-color: #373738;
+    position: center;
+
+}
+footer li{
+    display: inline-block;
+    vertical-align:bottom;
+}
+footer ul {
+    width: 50%;
+    margin-left: auto;
+}
+
+/* Skills Section Constructed using CSS flex */
+.flexContainer {
+    display: flex;
+    height: 50%;
+    margin: 15px;
+    align-items: center;
+    justify-content: center;
+}
+.mySkills div {
+    height: 200px;
+    padding: 50px;
+    margin: 15px;
+}
+.mySkills h1 {
+    text-align: center;
+    padding: 25px;
+    font-size: larger;
+    text-decoration: underline;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.mySkills img {
+    width: 137%;
+    height: auto;
+    margin-left: 30px;
+}
+
+
+/* Projects Section Constructed using CSS Grid */
+.myWork h1 {
+    text-align: center;
+    padding: 75px;
+    margin-top: 100px;
+    font-size: larger;
+    text-decoration: underline;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.workGrid {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: wheat;
+    color: gray;
+    height: 300px;
+    width: 1000px;
+    margin-bottom: 35px;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "image title"
+    "image paragraph"
+    "image button";
+}
+#image {
+    grid-area: image;
+    height: 600px;
+    width: auto;
+}
+#title {
+    grid-area: title;
+    margin-bottom: 30px;
+    margin-left: 100px;
+    margin-top: 25px;
+    text-decoration: underline;
+}
+#paragraph {
+    grid-area: paragraph;
+    margin-bottom: 30px;
+    margin-left: 100px;
+    margin-right: 50px;
+}
+#button {
+    grid-area: button;
+    margin-left: 100px;
+    background-color: peru;
+    color: white;
+}
+.workGrid img {
+    max-height: 240px;
+    max-width: auto;
+    margin-left: 100px;
+    margin-top: 25px;
+}
+.workGridTwo {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: seashell;
+    color: gray;
+    height: 300px;
+    width: 1000px;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "image title"
+    "image paragraph"
+    "image button";
+}
+#image {
+    grid-area: image;
+    margin-left: 25px;
+}
+#title {
+    grid-area: title;
+    margin-bottom: 30px;
+    margin-left: 100px;
+    margin-top: 25px;
+}
+#paragraph {
+    grid-area: paragraph;
+    margin-bottom: 30px;
+    margin-left: 100px;
+}
+#button {
+    grid-area: button;
+    margin-left: 100px;
+}
+.workGridTwo img {
+    width: 137%;
+    height: auto;
+    border-radius: 5%;
+    margin-top: 50px;
+}
+section {
+    max-width: 900px;
+    margin: auto;
+}
+
+@media only screen and (max-width: 600px){
+    .flexContainer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-flow: row wrap;
+        padding: 20px;
+    }
+    .flexContainer div {
+        margin-top: 25px;
+        height: 70px;
+        width: auto;
+    }
+    .mySkills img {
+        width: 35%;
+        height: auto;
+    }
+    .mySkills div {
+    height: 175px;
+    padding: 25px;
+    margin-bottom: 15px;
+    }
+}
