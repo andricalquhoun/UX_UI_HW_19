@@ -1,11 +1,21 @@
 $('li').on("click", function(){
   
     if ($(this).hasClass("home")){
-      $(".home").addClass("active");
-      $(".home").css("display", "block");
+      $(".home").css("text-decoration", "underline");
     }
-    else if ($(this).hasClass("portfolio")){
-      $(".portfolio").addClass("active");
-      $(".portfolio").css("display", "block");
+    if ($(this).hasClass("portfolio")){
+      $(".portfolio").css("text-decoration", "underline");
+    }
+    if ($(this).hasClass("skill")){
+      $(".skill").css("text-decoration", "underline");
+    }
+    if ($(this).hasClass("resume")){
+      $(".resume").css("text-decoration", "underline");
+    }
+    if ($(this).hasClass("experience")){
+      $(".experience").css("text-decoration", "underline");
+    }
+    if ($(this).hasClass("contact")){
+      $(".contact").css("text-decoration", "underline");
     }
   });

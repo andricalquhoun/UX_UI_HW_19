@@ -15,6 +15,24 @@ nav ul {
     margin-left: auto;
     word-spacing: 10px;
 }
+.home {
+    cursor: pointer;
+}
+.portfolio {
+    cursor: pointer;
+}
+.skill {
+    cursor: pointer;
+}
+.resume {
+    cursor: pointer;
+}
+.experience {
+    cursor: pointer;
+}
+.contact {
+    cursor: pointer;
+}
 div.content{
     text-align: center;
 }
