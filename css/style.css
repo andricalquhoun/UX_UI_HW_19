@@ -35,10 +35,13 @@ nav ul {
 .contact {
     cursor: pointer;
 }
+button {
+    cursor: pointer;
+}
+
 div.content{
     text-align: center;
 }
-
 p {
     font-family: Arial, Helvetica, sans-serif;
     color: gray;
@@ -57,18 +60,23 @@ div.content {
     width: 500px;
     margin: 0 auto;
 }
-footer {
-    background-color: #373738;
-    position: center;
-
+#inline-block {
+    text-align: left;
+}
+#buttons {
+    margin-top: 20px;
+    margin-left: 400px;
 }
 footer li{
     display: inline-block;
-    vertical-align:bottom;
+    vertical-align: bottom;
 }
 footer ul {
     width: 50%;
-    margin-left: auto;
+    margin-left: 680px;
+    word-spacing: 10px;
+    font-size: 15px;
+    margin-top: 50px;
 }
 
 /* Skills Section Constructed using CSS flex */
@@ -90,13 +98,12 @@ footer ul {
     font-size: larger;
     text-decoration: underline;
     font-family: Arial, Helvetica, sans-serif;
+    margin-top: 50px;
 }
 .mySkills img {
     width: 137%;
     height: auto;
-    margin-left: 30px;
 }
-
 
 /* Projects Section Constructed using CSS Grid */
 .myWork h1 {
